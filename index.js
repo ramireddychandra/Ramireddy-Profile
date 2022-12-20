@@ -43,3 +43,28 @@ profile.addEventListener("click", function () {
   skills.classList.remove("active");
   profile.classList.add("active");
 });
+
+const addSkill = document.querySelector(".skill-add");
+const addform = document.querySelector(".add-skills");
+const submitskill = document.querySelector(".button");
+
+function addskill() {
+  addform.classList.remove("hidden");
+}
+// addSkill.addEventListener("click", function () {
+//   console.log("skilladd console");
+//   addform.classList.remove("hidden");
+// });
+
+const submitform = function () {
+  const skillname = document.querySelector("#skill");
+  const skilllist = document.querySelector(".skill-summary");
+
+  skilllist.innerHTML += `<div class="skill">${skillname.value}</div>`;
+  skillname.value = "";
+  addform.classList.add("hidden");
+};
+
+function submitcloseform() {
+  addform.classList.add("hidden");
+}
