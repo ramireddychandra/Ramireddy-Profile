@@ -58,7 +58,7 @@ function addskill() {
 
 const submitform = function () {
   const skillname = document.querySelector("#skill");
-  const skilllist = document.querySelector(".skill-summary");
+  const skilllist = document.querySelector(".skillcontent");
 
   skilllist.innerHTML += `<div class="skill">${skillname.value}</div>`;
   skillname.value = "";
