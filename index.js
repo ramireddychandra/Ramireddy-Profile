@@ -68,3 +68,10 @@ const submitform = function () {
 function submitcloseform() {
   addform.classList.add("hidden");
 }
+
+const map = document.querySelector("#servicemap");
+const mappage = document.querySelector(".location-map");
+map.addEventListener("click", function () {
+  page1.classList.add("hidden");
+  mappage.classList.remove("hidden");
+});

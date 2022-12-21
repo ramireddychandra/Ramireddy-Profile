@@ -149,3 +149,12 @@ input.skillinput,.button{
     border-color: white;
 
 }
+iframe{
+    height:100vh;
+    width: 100vw;
+}
+.button{
+    position: absolute;
+    right:0px;
+    top:0px;
+}
